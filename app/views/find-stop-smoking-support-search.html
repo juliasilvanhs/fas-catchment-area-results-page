@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% from "breadcrumb/macro.njk" import breadcrumb %}
+{% from "button/macro.njk" import button %}
+{% from "input/macro.njk" import input %}
+{% from "header/macro.njk" import header %}
+
+
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "#",
+        text: "Home"
+      },
+      {
+        href: "#",
+        text: "NHS services"
+      }
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-heading-xl">Find stop smoking support services</h1>
+
+
+
+{{ input({
+  id: "location-search",
+  name: "locationSearch",
+  classes: "nhsuk-input--width-20",
+  label: {
+    text: "Enter a town, city or postcode in England"
+  }
+  
+}) }}
+
+      {{ button({
+        text: "Search",
+        href: "#"
+      }) }}
+
+       </div>
+  </div>
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+{{ button({
+  text: "Use your location",
+  classes: "nhsuk-button--secondary"
+}) }}
+
+
+
+    </div>
+  </div>
+{% endblock %}
