@@ -4,6 +4,10 @@
 
 <!-- Extends the layout from /app/views/layout.html -->
 {% extends 'layout.html' %}
+
+{% from "button/macro.njk" import button %}
+
+
 <!--
   In /app/views/layout.html you can:
     - change the header and footer
@@ -44,6 +48,32 @@
       </p>
 
       <hr>
+
+     <h2 class="nhsuk-heading-l">
+        Portotypes: Find a Service / Baseline finder standards sprint 6
+      </h2>    
+
+      {{ button({
+        text: "Catchment area",
+        href: "/find-stop-smoking-support-search"
+      }) }}
+<div>
+            {{ button({
+        text: "Eligibility start page",
+        href: "#"
+      }) }}
+</div>
+
+<div>
+            {{ button({
+        text: "Eligibility search page",
+        href: "#"
+      }) }}
+</div>
+ 
+
+
+
 
       <h2 class="nhsuk-heading-l">
         Get started

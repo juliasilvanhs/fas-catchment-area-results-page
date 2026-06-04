@@ -2,7 +2,7 @@
 
 module.exports = {
   // Service name
-  serviceName: 'Prototype',
+  serviceName: 'Find a Service',
 
   // Port to run the prototype on locally
   port: 3000
