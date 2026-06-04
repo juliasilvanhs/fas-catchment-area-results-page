@@ -32,11 +32,28 @@
   <span class="nhsuk-caption-xl nhsuk-caption--bottom">
 Stop smoking support services
 </span> 
-      <h1 class="nhsuk-heading-xl">Living Well Stop Smoking Services Bradford</h1>
+      <h1 class="nhsuk-heading-xl">Leeds Stop Smoking Services</h1>
 
 
 
 <h2> Contact us </h2>
+{% set cardDescriptionHtml %}
+<h3> Address <h3>
+  <p>1st Floor Great Western House, Wakefield Road, Leeds , West Yorkshire, LS10 3DQ 
+  <p><a href="#">Get directions (open in Google Maps)</a></p>
+{% endset %}
+
+<ul class="nhsuk-grid-row nhsuk-card-group">
+  <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+    {{ card({
+      clickable: false,
+      heading: " ",
+      headingSize: "s",
+      href: "/#",
+      descriptionHtml: cardDescriptionHtml
+    }) }}
+  </li>
+</ul>
 
 {% set cardDescriptionHtml %}
 <h3> Phone <h3>
@@ -58,6 +75,7 @@ Stop smoking support services
   </li>
 </ul>
 
+
 {{ actionLink({
   text: "Find stop smoking support services",
   href: "/find-stop-smoking-support-search"
@@ -66,17 +84,18 @@ Stop smoking support services
 <div>
 <h3>Services details</h3>
 </div>
-<div> <p> Developed by experts and ex-smokers, your local stop smoking service will provide free advice, support and encouragement to help you stop smoking for good. </p> </div>
+<div> <p> Leeds Stop Smoking Service is a free service open to anyone who would like to stop smoking.</p> 
+ <p>Leeds Stop Smoking Service run a variety of sessions, with over 40 clinics across Leeds which include groups, one-to-ones and drop-ins. The sessions provide information about the different types of treatment available, help you to plan and prepare for your quit day and also give expert advice and encouragement whilst you try to stop smoking. You’ll also have your carbon monoxide levels tested before and after you stop. </p> </div>
 
 <div>
 <h3>Catchment area</h3>
 </div>
-<div> <p> Bradford Local Authority Area</p> </div>
+<div> <p> Leeds</p> </div>
 
 <div>
-<h3>General notes</h3>
+<h3>Further information</h3>
 </div>
-<div> <p> Can provide NRT for up to 12 weeks. </p> </div>
+<div> <p> We also provide intensive support to pregnant women and their families, people with mental health problems and young people. </p> </div>
 
 <div>
 <h3>Languages</h3>
@@ -87,12 +106,14 @@ Stop smoking support services
 <div>
 <h3>Helpline opening times</h3>
 </div>
-<div> <p> Mon-Fri 9am - 5pm </p> </div>
+<div> <p> Mon-Fri 8:30am - 6pm </p> </div>
 
 <div>
 <h3>Referral method</h3>
 </div>
-<div> <p> Self referral, or via health professional, social workers, youth workers, health trainers, statutory and voluntary sector organisations. Can refer via email. </p> </div>
+<div> <p> Self-referral via website, Self-referral via telephone, General Practice, Pharmacy, Midwifery community, Midwifery hospital
+
+ </p> </div>
 
 <div>
 <h3>Meeting day</h3>
