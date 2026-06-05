@@ -33,6 +33,7 @@
 {{ input({
   id: "location-search",
   name: "locationSearch",
+  value: data.locationSearch,
   classes: "nhsuk-input--width-20",
   label: {
     text: "Enter a town, city or postcode in England"
@@ -42,7 +43,7 @@
 
       {{ button({
         text: "Search",
-        href: "#"
+        href: "/results-stop-smoking"
       }) }}
 
        </div>
@@ -55,7 +56,7 @@
   classes: "nhsuk-button--secondary"
 }) }}
 
-
+<form action="/results-stop-smoking" method="post" novalidate>
 
     </div>
   </div>
