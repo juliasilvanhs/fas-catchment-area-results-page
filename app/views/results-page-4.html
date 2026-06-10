@@ -37,26 +37,14 @@ Stop smoking support services
 
 
 <h2> Contact us </h2>
-{% set cardDescriptionHtml %}
+
+{% set cardDescriptionHtml1 %}
 <h3> Address <h3>
-  <p>1st Yorkshire Smokefree Calderdale (Specialist Service), Laura Mitchell Health and Wellbeing Centre, Great Albion Street
-Halifax, West Yorkshire, HX1 1YR 
+  <p>1st Yorkshire Smokefree Calderdale (Specialist Service), <br/> Laura Mitchell Health and Wellbeing Centre <br/> Great Albion Street <br/>
+Halifax, West Yorkshire, <br/> HX1 1YR 
   <p><a href="#">Get directions (open in Google Maps)</a></p>
 {% endset %}
-
-<ul class="nhsuk-grid-row nhsuk-card-group">
-  <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-    {{ card({
-      clickable: false,
-      heading: " ",
-      headingSize: "s",
-      href: "/#",
-      descriptionHtml: cardDescriptionHtml
-    }) }}
-  </li>
-</ul>
-
-{% set cardDescriptionHtml %}
+{% set cardDescriptionHtml2 %}
 <h3> Phone <h3>
   <p>01111 111 111</a><br />
 <h3> Online <h3>
@@ -71,10 +59,20 @@ Halifax, West Yorkshire, HX1 1YR
       heading: " ",
       headingSize: "s",
       href: "/#",
-      descriptionHtml: cardDescriptionHtml
+      descriptionHtml: cardDescriptionHtml1
+    }) }}
+  </li>
+  <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+    {{ card({
+      clickable: false,
+      heading: " ",
+      headingSize: "s",
+      href: "/#",
+      descriptionHtml: cardDescriptionHtml2
     }) }}
   </li>
 </ul>
+
 
 
 {{ actionLink({
