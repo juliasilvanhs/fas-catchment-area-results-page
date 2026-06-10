@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% from "breadcrumb/macro.njk" import breadcrumb %}
+{% from "button/macro.njk" import button %}
+{% from "input/macro.njk" import input %}
+{% from "header/macro.njk" import header %}
+{% from "card/macro.njk" import card %}
+{% from "action-link/macro.njk" import actionLink %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "#",
+        text: "Home"
+      },
+      {
+        href: "#",
+        text: "NHS services"
+      },
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+  <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+Stop smoking support services
+</span> 
+      <h1 class="nhsuk-heading-xl">Living Well Stop Smoking Services Bradford</h1>
+
+
+
+<h2> Contact us </h2>
+
+{% set cardDescriptionHtml %}
+<h3> Phone <h3>
+  <p>01111 111 111</a><br />
+<h3> Online <h3>
+  <p><a href="#">Website</a></p>
+  <p><a href="#">Email</a></p>
+{% endset %}
+
+<ul class="nhsuk-grid-row nhsuk-card-group">
+  <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+    {{ card({
+      clickable: false,
+      heading: " ",
+      headingSize: "s",
+      href: "/#",
+      descriptionHtml: cardDescriptionHtml
+    }) }}
+  </li>
+</ul>
+
+{{ actionLink({
+  text: "Find stop smoking support services",
+  href: "/find-stop-smoking-support-search"
+}) }}
+
+<div>
+<h3>Services details</h3>
+</div>
+<div> <p> Developed by experts and ex-smokers, your local stop smoking service will provide free advice, support and encouragement to help you stop smoking for good. </p> </div>
+
+<div>
+<h3>Catchment area</h3>
+</div>
+<div> <p> Bradford Local Authority Area</p> </div>
+
+<div>
+<h3>General notes</h3>
+</div>
+<div> <p> Can provide NRT for up to 12 weeks. </p> </div>
+
+<div>
+<h3>Languages</h3>
+</div>
+<div> <p> Contact in English </p> 
+<p>Translation Available </p> </div>
+
+<div>
+<h3>Helpline opening times</h3>
+</div>
+<div> <p> Mon-Fri 9am - 5pm </p> </div>
+
+<div>
+<h3>Referral method</h3>
+</div>
+<div> <p> Self referral, or via health professional, social workers, youth workers, health trainers, statutory and voluntary sector organisations. Can refer via email. </p> </div>
+
+<div>
+<h3>Meeting day</h3>
+</div>
+<div> <p> Weekdays </p>
+<p>Weekdays Evenings </p> </div>
+
+<div>
+<p>This information was supplied by Serco Global Services on 29 May 2026. </p> </div>
+
+
+{% endblock %}
+
+
